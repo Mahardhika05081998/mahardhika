@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Biodata Mahasiswa 3dc01</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+  </head>
+	<body>
+	<div>
+	<br></br>
+	<h1><center>Biodata Mahasiswa 3dc01</h1></center>
+	<table class="table table-bordered table-triped">
+	<br></br>
+	<center>
+	<thead>
+	<tr>
+	  <th scope="col"><center>No</center></th>
+	  <th scope="col"><center>Nama</center></th>
+	  <th scope="col"><center>NPM</center></th>
+	  <th scope="col"><center>Tanggal Lahir</center></th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td scope="row"><center>2</center></td>
+	  	<td>Mahardhika</td>
+	  	<td>44116219</td>
+	  	<td>05 Agustus 1998</td>
+	 </tr>
+	<tr>
+	  	<td scope="row"><center>4</center></td>
+	  	<td>Budi Rachman</td>
+	  	<td>44002211</td>
+	  	<td>9 februari 1998</td>
+	</tr>
+	</tbody>
+	</table>
+	<br></br>
+	<div class="container">
+	<form>
+		<div class="form-group">
+			<label for="nama">Nama Anda</label>
+			<input type="text" class="form-control" id="nama">
+		</div>
+		<div class="form-group">
+			<label for="alamat">Alamat Anda</label>
+			<input type="text" class="form-control" id="alamat">
+		</div>
+		<div class="form-group">
+			<label for="Tanggal">Tanggal Lahir</label>
+			<input type="date" name="tanggal">
+		</div>
+	<br>
+	<center>
+	<button type="submit" value="Konfrimasi" onclick="cekAlamat(this.form)">Konfrimasi</button>
+	</form>
+	</div>
+	<script type="text/javascript">
+		function cekAlamat(form) {
+		if (form.elements[0].value == "") {
+			alert("Nama tidak di input");
+			form.nama.focus();
+			form.nama.select();
+			return(false);
+		}
+		alert("hello, " +
+				form.elements[0].value);
+		return(true);
+	}
+		
+	</script>
+	</body>
+</html>
